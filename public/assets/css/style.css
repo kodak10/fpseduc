@@ -1,0 +1,598 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ############### General ################*/
+.title{
+    font-weight: 700;
+    font-size: 25px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 30px auto;
+}
+a{
+    text-decoration: none;
+}
+
+
+
+/* ############### Header ################*/
+header .container img{margin: auto !important; width: auto; height: 100px;}
+
+header .navbar:last-child{
+    background-color: #0e1532 !important;
+    padding: 15px;
+}
+header .nav-link{
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff !important;
+}
+.header .nav-link:hover{
+    font-size: 18px !important;
+}
+
+
+/* ############### Banner ################*/
+.carousel .item img{width: 100%;height: 100%;object-fit: cover;animation-name: fadeInUp;}
+
+.carousel .cover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: rgba(14, 21, 50, 0.33);
+    display: flex;
+    align-items: center;
+}
+.carousel .header-content{position: relative;padding:80px ;}
+
+.carousel .header-content h2{color: #fff;font-weight: bold;font-size: 35px;line-height: 2.5; width: 70%;}
+
+.carousel .header-content .line{
+    content: "";
+    width: 100%;
+    height: 100%;
+    margin: 20px;
+    left: 0;
+    top: 0;
+    position: absolute;
+    border: 17px solid #dfcc03;
+    clip-path: polygon(0 0, 60% 0, 36% 100%, 0% 100%);
+}
+
+.carousel-inner .active .line{
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-delay: 0.6;
+    animation-duration: 1.3s;
+    animation-name: fadeInLeft;
+}
+.carousel-inner .active h2{
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-delay: 0.6s;
+    animation-duration: 1.3s;
+    animation-name: fadeInUp;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+}
+
+
+
+/* ############### About ########### */
+#about-section {
+    background: rgba(32, 33, 36, 0.1);
+    position: relative;
+}
+#about-section h3{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.blockabout {
+    padding: 20px;
+    background: white;
+}
+
+.blockabout-inner {
+    padding: 30px;
+    border: 1px solid rgba(32, 33, 36, 0.1);
+}
+
+.sosmed-horizontal a i {
+    border: 1px solid #070707;
+    border-radius: 50%;
+    color: #070707;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    margin: auto 3px;
+    font-size: 15px;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.rey-btn {
+    border: 2px solid #070707;
+    padding: 10px 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 13px;
+    font-weight: 700;
+    border-radius: 50px;
+    transition: all 0.3s;
+}
+
+
+/* ############### Ours Services ########### */
+.ours_services{
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+.ours_services .box{
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 20px auto;
+}
+.ours_services .active{
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 5px 0px 20px 0px #b9b9b9;
+}
+.ours_services  .box:hover{
+    box-shadow: 5px 0px 20px 0px #b9b9b9;
+}
+.ours_services .icon-box{margin-top: 10px;}
+.ours_services .icon-box i{
+    font-size: 32px;
+    color: #0e1532;
+}
+.ours_services .text-box{
+    margin: 30px auto;
+}
+.ours_services .text-box span{
+    font-size: 20px;
+    font-weight: 700;
+    color: #0e1532;
+}
+
+
+
+/* ############### Facultes ########### */
+.faculte a{
+    text-decoration: none;
+}
+.facultes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image:
+    linear-gradient(   #0e1532e3, #0e1532e3),
+    url('assets/img/bau.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.facultes .title{color: #fff;}
+.facultes .faculte{
+    background-color: #f2f2f2;
+    margin: 20px auto;
+    border-radius: 5px;
+}
+.facultes .faculte:hover{
+    box-shadow: 5px 0px 20px 0px #b9b9b9;
+    transition: 0.3s all ease-in-out;
+}
+.facultes .faculte h3{
+    line-height:1.8;
+}
+.faculte:hover h3{
+    color: #fff;
+}
+.facultes .faculte .detail-faculte{
+    font-weight: 700;
+    font-size: 24px;
+}
+.facultes a{
+    display: flex;
+justify-content: end;
+}
+.facultes a i{
+    font-size: 25px;
+    padding: 15px;
+
+}
+
+/***Faculte Hover***/
+.communication:hover{
+    background-image:
+    linear-gradient(   #dfcd037d, #dfcd037d),
+    url('../img/facultes/communication.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+}
+.architecture:hover{
+    background-image:
+    linear-gradient(   #dfcd037d, #dfcd037d),
+    url('../img/facultes/Architecture.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+}
+.art_science:hover{
+    background-image:
+    linear-gradient(   #dfcd037d, #dfcd037d),
+    url('../img/facultes/art_science.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+}
+.droit:hover{
+    background-image:
+    linear-gradient(   #dfcd037d, #dfcd037d),
+    url('../img/facultes/droit.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+}
+.ingenierie:hover{
+    background-image:
+    linear-gradient(   #dfcd037d, #dfcd037d),
+    url('../img/facultes/ingenierie.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+}
+.economie:hover{
+    background-image:
+    linear-gradient(   #dfcd037d, #dfcd037d),
+    url('../img/facultes/economie.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+}
+.sante:hover{
+    background-image:
+    linear-gradient(   #dfcd037d, #dfcd037d),
+    url('../img/facultes/sante.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+}
+.medecine:hover{
+    background-image:
+    linear-gradient(   #dfcd037d, #dfcd037d),
+    url('../img/facultes/medecine.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+}
+.pharmacie:hover{
+    background-image:
+    linear-gradient(   #dfcd037d, #dfcd037d),
+    url('../img/facultes/pharmacie.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+}
+.infirmerie:hover{
+    background-image:
+    linear-gradient(   #dfcd037d, #dfcd037d),
+    url('../img/facultes/infirmerie.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+}
+.veterinaire:hover{
+    background-image:
+    linear-gradient(   #dfcd037d, #dfcd037d),
+    url('../img/facultes/veterinaire.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+}
+.tourisme:hover{
+    background-image:
+    linear-gradient(   #dfcd037d, #dfcd037d),
+    url('../img/facultes/tourisme.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+}
+
+
+/* ############### Parralax ########### */
+.parralax{
+    background-image: linear-gradient(   #0e1532e3, #0e1532e3), url('../img/carousel/1.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    height: 60vh;
+}
+
+
+
+/* ############### Testimonial-partenaires ########### */
+
+.testimonial-partenaire{
+    min-height: 80vh;
+    display: grid;
+    place-items: center;
+}
+.testimonial-partenaire h3{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 19px;
+}
+.testimonial-area {
+    padding: 100px 0;
+    background-color: #ffb600;
+    background-image: url(../images/parallax2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+  }
+  
+  .testimonial-area .border-title,
+  .testimonial-area .border-sub-title {
+    color: #fff;
+  }
+  
+  .quote-item .quote-text {
+    margin: 0 0 10px;
+    display: inline-block;
+    padding: 0 40px 30px 60px;
+    background-color: #fff;
+    position: relative;
+    font-size: 16px;
+    font-style: italic;
+  }
+  @media (max-width: 575px) {
+    .quote-item .quote-text {
+      padding: 0 40px 30px 50px;
+    }
+  }
+  
+  .quote-item .quote-text:before {
+    content: "\f10d";
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+    font-size: 30px;
+    left: 0;
+    top: 0;
+    font-weight: 700;
+    color: #ffc009;
+  }
+  
+  .testimonial-slide .slick-dots {
+    bottom: -35px;
+  }
+  
+  img.testimonial-thumb {
+    max-width: 80px;
+    float: left;
+    margin-right: 20px;
+    border-radius: 5px;
+  }
+  
+  .quote-item-info {
+    padding-top: 15px;
+    display: inline-block;
+  }
+  
+  .quote-author {
+    font-size: 16px;
+    line-height: 18px;
+    margin: 0 0 2px;
+    font-weight: 700;
+    display: block;
+    color: #ffb600;
+  }
+  
+  .quote-item-footer {
+    margin-top: 0;
+    margin-left: 60px;
+  }
+@media (max-width: 575px) {
+    .quote-item-footer {
+      margin-left: 0;
+    }
+}
+  
+  /* Testimonial Border */
+.quote-item.quote-border .quote-text-border {
+    border: 1px solid #ffb600;
+    padding: 20px;
+    position: relative;
+    line-height: 28px;
+    color: #666;
+    font-size: 18px;
+    text-align: center;
+}
+  
+.quote-item.quote-border .quote-text-border:before {
+    border: 12px solid;
+    border-color: #e1e1e1 transparent transparent;
+    border-top-color: #ffb600;
+    bottom: -24px;
+    position: absolute;
+    content: "";
+    display: block;
+    height: 0;
+    width: 0;
+    left: 0;
+    margin: 0 auto;
+    right: 0;
+}
+  
+.quote-item.quote-border .quote-text-border:after {
+    border: 12px solid;
+    border-color: #fff transparent transparent;
+    bottom: -22px;
+    position: absolute;
+    content: "";
+    display: block;
+    height: 0;
+    width: 0;
+    left: 0;
+    margin: 0 auto;
+    right: 0;
+}
+  
+.quote-item.quote-border .quote-item-footer {
+    margin-left: 0;
+    text-align: center;
+    margin-top: 35px;
+}
+  
+.quote-item.quote-border .quote-item-footer img.testimonial-thumb {
+    float: none;
+    margin: 0;
+}
+  
+.quote-item.quote-border .quote-item-footer .quote-item-info {
+    display: block;
+}
+  
+  /* Clients */
+.clients-logo {
+    margin: 0 0 30px;
+    border: 1px solid #dadada;
+    min-height: 105px;
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+  
+.clients-logo a {
+    
+    text-decoration: none;
+    font-weight: bold;
+    color: #0e1532;
+}
+
+.clients-logo img{
+    height: 40px;
+    width: 40px;
+}
+
+
+
+/* ############### Blog ########### */
+.blog{
+    min-height: 80vh;
+    display: grid;
+    place-items: center;
+}
+.blog .card{
+    text-align: center;
+}
+.blog img{
+    height: 120px;
+}
+.blog .card h5{
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+
+
+/* ############### Contact_Us ########### */
+.contact_us{
+    background: url('../img/contact-bg.png') no-repeat;
+    background-size: cover;
+    height: 110vh;
+}
+.contact_us .content-infos{
+    color: #f5f5f5;
+    font-weight: 700;
+    font-size: 18px;
+    text-decoration: none;
+}
+.contact_us .fa{
+    color: #0e1532;
+    font-size: 21px;
+}
+.contact_us h3{
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.contact_us label{
+    color: #0e1532;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+.contact_us .icon{
+    background-color: #0e1532;
+    border-radius: 100%;
+    height: 40px;
+    width: 40px;
+    margin-bottom: 10px;
+    margin: auto;
+
+}
+.contact_us .fa{
+    margin: auto;
+    font-size: 16px;
+}
+
+
+/* ############### Footer ########### */
+.footer{
+    background-color: #0e1532;
+}
+.footer span{
+    padding: 2px;
+    color: #fff;
+    font-weight: 700;
+}
+
+
+/* ############### Responsive ########### */
+@media (max-width:992px) {
+
+    header .container img{margin:0 !important;}
+    
+    .banner img{min-height: 67vh !important; width: 100%;}
+
+    .faculte {
+        height: 150px !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .photo_about{
+        margin: auto;
+    }
+}
+@media (max-width:576px) {
+
+    .carousel-control-next-icon, .carousel-control-prev-icon{display: none !important;}
+
+    .carousel .header-content h2{font-size: 28px;line-height: 2;}
+
+    .contact_us{
+        min-height: 160vh;
+    }
+}
