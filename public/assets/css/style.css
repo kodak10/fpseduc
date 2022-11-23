@@ -98,15 +98,19 @@ header .nav-link:hover{
 #about-section .btn{
     margin: 50px;
     padding: 10px;
-    color: #fff;
+    color: #fff !important;
     font-weight: 600;
     border: 1px solid #0e1532;
+    transition: all 0.3s;
+    font-size: 16px;
+    text-transform: capitalize;
 }
 #about-section .btn:first-child{
     background-color: #0e1532;
 }
 #about-section .btn:last-child{
-    color: #0e1532;
+    color: #0e1532 !important;
+    background-color: transparent;
 }
 .blockabout {
     padding: 20px;
@@ -132,16 +136,6 @@ header .nav-link:hover{
     transition: all 0.3s;
 }
 
-.rey-btn {
-    border: 2px solid #070707;
-    padding: 10px 40px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 13px;
-    font-weight: 700;
-    border-radius: 50px;
-    transition: all 0.3s;
-}
 
 
 /* ############### Ours Services ########### */
@@ -354,22 +348,8 @@ justify-content: end;
     font-weight: 600;
     font-size: 19px;
 }
-.testimonial-area {
-    padding: 100px 0;
-    background-color: #ffb600;
-    background-image: url(../images/parallax2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: 50% 50%;
-  }
   
-  .testimonial-area .border-title,
-  .testimonial-area .border-sub-title {
-    color: #fff;
-  }
-  
-  .quote-item .quote-text {
+.quote-item .quote-text {
     margin: 0 0 10px;
     display: inline-block;
     padding: 0 40px 30px 60px;
@@ -377,14 +357,14 @@ justify-content: end;
     position: relative;
     font-size: 16px;
     font-style: italic;
-  }
-  @media (max-width: 575px) {
+}
+@media (max-width:575px) {
     .quote-item .quote-text {
       padding: 0 40px 30px 50px;
     }
-  }
+}
   
-  .quote-item .quote-text:before {
+.quote-item .quote-text:before {
     content: "\f10d";
     font-family: "Font Awesome 5 Free";
     position: absolute;
@@ -393,44 +373,44 @@ justify-content: end;
     top: 0;
     font-weight: 700;
     color: #ffc009;
-  }
+}
   
-  .testimonial-slide .slick-dots {
+.testimonial-slide .slick-dots {
     bottom: -35px;
-  }
+}
   
-  img.testimonial-thumb {
+img.testimonial-thumb {
     max-width: 80px;
     float: left;
     margin-right: 20px;
     border-radius: 5px;
   }
   
-  .quote-item-info {
+.quote-item-info {
     padding-top: 15px;
     display: inline-block;
-  }
+}
   
-  .quote-author {
+.quote-author {
     font-size: 16px;
     line-height: 18px;
     margin: 0 0 2px;
     font-weight: 700;
     display: block;
     color: #ffb600;
-  }
+}
   
-  .quote-item-footer {
+.quote-item-footer {
     margin-top: 0;
     margin-left: 60px;
-  }
+}
 @media (max-width: 575px) {
     .quote-item-footer {
       margin-left: 0;
     }
 }
   
-  /* Testimonial Border */
+/* Testimonial Border */
 .quote-item.quote-border .quote-text-border {
     border: 1px solid #ffb600;
     padding: 20px;
@@ -497,19 +477,15 @@ justify-content: end;
     align-items: center;
     align-content: center;
 }
-  
 .clients-logo a {
-    
     text-decoration: none;
     font-weight: bold;
     color: #0e1532;
 }
-
 .clients-logo img{
     height: 40px;
     width: 40px;
 }
-
 
 
 /* ############### Blog ########### */
@@ -595,10 +571,13 @@ justify-content: end;
 /* ############### Responsive ########### */
 @media (max-width:992px) {
 
+    .blockabout-inner{
+        width: 100%;
+    }
     header .container img{margin:0 !important;}
-    
-    .banner img{min-height: 67vh !important; width: 100%;}
 
+    .banner img{min-height: 67vh !important; width: 100%;}
+    
     .faculte {
         height: 150px !important;
         display: flex;
@@ -609,14 +588,25 @@ justify-content: end;
     .photo_about{
         margin: auto;
     }
+
+    .testimonial-partenaire .owl-carousel .tem{
+        width: 100%;
+    }
+
+    .card{
+        margin: 20px auto;
+    }
 }
 @media (max-width:576px) {
 
+    .carousel .header-content h2{width: 100% !important;}
+
     .carousel-control-next-icon, .carousel-control-prev-icon{display: none !important;}
 
-    .carousel .header-content h2{font-size: 28px;line-height: 2;}
+    .carousel .header-content h2{font-size: 24px;line-height: 2;}
 
     .contact_us{
         min-height: 160vh;
     }
+
 }

@@ -138,9 +138,9 @@
                             Quant aux bourses allant de 60% à 100%, les universités en collaboration avec <span>FPS EDUC</span>, les octroient
                             sur la base d'un test en anglais et en français, auquel les élèves et étudiants s'inscrivent et participent.
                         </p>
-                        <div class="d-flex justify-content-center align-items-center">
-                            <a href="#" class="btn rey-btn mt-3">Demander une bourse</a>
-                            <a href="#" class="btn rey-btn mt-3"><i class="mr-3 fa-solid fa-download"></i> Télécharger la Brochure</a>
+                        <div class="row m-auto d-flex justify-content-center align-items-center">
+                            <a href="#" class="btn"><i class="mr-3 fa-solid fa-pen"></i> Demander une bourse</a>
+                            <a href="#" class="btn"><i class="mr-3 fa-solid fa-download"></i> Télécharger la Brochure</a>
                         </div>
                     </div>
                 </div>
@@ -454,9 +454,10 @@
         
                     <div class="row all-clients text-center">
                         <div class="col-lg-4">
-                        <figure class="clients-logo">
-                            <a href="#"><img loading="lazy" class="img-fluid" src="{{ asset('assets/img/partenaire/final_university.jpg') }}" alt="clients-logo" />Final International University</a>
-                        </figure>
+                            <figure class="clients-logo">
+                                <img loading="lazy" class="img-fluid" src="{{ asset('assets/img/partenaire/final_university.jpg') }}" alt="clients-logo" />
+                                <p>Final International University</p>
+                            </figure>
                         </div>
 
                         <div class="col-lg-4">
