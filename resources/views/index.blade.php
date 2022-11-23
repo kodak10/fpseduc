@@ -11,7 +11,6 @@
     <title>FPS EDUC | Bourse d'études en Chypre du Nord et en Turquie</title>
     <link rel="icon" type="image/jpg" href="{{ asset('assets/img/logo.png') }}" />
     
-
     <!-- 
         ###################     Fin Referencement    ##############
     -->
@@ -20,7 +19,6 @@
         ###################     Style    ##############
     -->
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
-
 
     <!-- 
         ###################     Lien Cdn    ##############
@@ -54,19 +52,19 @@
                                 <a class="nav-link" aria-current="page" href="#">Accueil</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="#">Qui sommes-nous ?</a>
+                                <a class="nav-link" aria-current="page" href="#about-section">Qui sommes-nous ?</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="#">Nos Services</a>
+                                <a class="nav-link" aria-current="page" href="#ours_services">Nos Services</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="#">Nos Facultés</a>
+                                <a class="nav-link" aria-current="page" href="#facultes">Nos Facultés</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link " aria-current="page" href="#">Blog</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="#">Contact</a>
+                                <a class="nav-link" aria-current="page" href="#contact_us">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -134,15 +132,15 @@
                             <h3 class="title">Qui sommes-nous ?</h3>
                         </div>
                         <p class="description-p text-muted pe-0 pe-lg-0">
-                            <span>FPS EDUC</span>, basée en Côte D'Ivoire, spécialisée dans l'octroi des bourses d'études à destination de la Chypre du Nord et la Turquie. <br>
+                            <span>FPS EDUC</span>, basée en Côte D'Ivoire, est spécialisé dans l'octroi des bourses d'études à destination de la Chypre du Nord et la Turquie. <br>
                             Nos bourses d'études, sont destinées aux élèves et étudiants de toutes les nationalités.<br>
                             Pour les bourses d'études de 50%, il faut s'adresser à <span>FPS EDUC</span>, et présenter les documents d'inscription requis.<br>
                             Quant aux bourses allant de 60% à 100%, les universités en collaboration avec <span>FPS EDUC</span>, les octroient
                             sur la base d'un test en anglais et en français, auquel les élèves et étudiants s'inscrivent et participent.
                         </p>
-                        <div class="d-flex">
+                        <div class="d-flex justify-content-center align-items-center">
                             <a href="#" class="btn rey-btn mt-3">Demander une bourse</a>
-                            <a href="#" class="btn rey-btn mt-3">Brochure</a>
+                            <a href="#" class="btn rey-btn mt-3"><i class="mr-3 fa-solid fa-download"></i> Télécharger la Brochure</a>
                         </div>
                     </div>
                 </div>
@@ -559,7 +557,7 @@
                 
             </div>
             <div class="row">
-                <a href="" class="text-center mt-3">Voir le Blog Complet</a>
+                <a href="" class="text-center mt-3 btn_more">Voir le Blog Complet <i class="ml-3 fa-solid fa-arrow-right"></i></a>
             </div>
         </div>
     </section>
